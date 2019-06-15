@@ -29,7 +29,6 @@ def playVideo(process, fileName = ""):
         process.stdin.write('q')
 
     # launch the video
-    print("Start new process ")
     process = subprocess.Popen(['omxplayer', fileName],
                                    stdin=subprocess.PIPE,
                                    stdout=subprocess.PIPE,
